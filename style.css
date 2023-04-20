@@ -44,7 +44,7 @@ main {
   max-width: 370px;
   min-width: 300px;
   width: 90%;
-  height: 410px;
+  height: auto;
   background-color: white;
   background-image: url(images/bg-pattern-card.svg);
   background-size: 100% 35%;
@@ -63,8 +63,11 @@ main {
 }
 
 .card__photo {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: solid white 6px;
+  object-fit: contain;
 }
 
 .card__texts {
@@ -72,6 +75,7 @@ main {
   color: var(--Very-dark-desaturated-blue);
   margin: 25px 0;
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .age {
